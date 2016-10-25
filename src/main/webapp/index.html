@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo application</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body ng-app="demo">
+
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<!-- CUSTOM JS -->
+<script type="text/javascript" src="scripts/app/app.js"></script>
+<script type="text/javascript" src="scripts/app/state.js"></script>
+<script type="text/javascript" src="scripts/controller/home.controller.js"></script>
+<script type="text/javascript" src="scripts/controller/newProduct.controller.js"></script>
+
+<!-- SERVICE -->
+<script type="text/javascript" src="scripts/service/product.service.js"></script>
+
+<div id="menu">
+    <ul>
+        <li><a href="javascript:void(0);" ui-sref="home" ui-sref-active="home">Home</a></li>
+        <li><a href="javascript:void(0);" ui-sref="state1" ui-sref-active="state1">Page2</a></li>
+    </ul>
+</div>
+<div ui-view="content">
+toto
+</div>
+</body>
+</html>
